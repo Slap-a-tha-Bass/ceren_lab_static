@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle, css } from "styled-components";
+
 export const GlobalStyle = createGlobalStyle`
 /* resets */
 * {
@@ -32,39 +33,39 @@ h6 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: calc(2rem + 1vw);
 
-  margin: 0.75rem 0;
+  margin: 1vw 1vw;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: calc(1.75rem + 1vw);
 
-  margin: 0.75rem 0;
+  margin: 1vw 1vw;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: calc(1.5rem + 1vw);
 
-  margin: 0.75rem 0;
+  margin: 1vw 1vw;
 }
 
 h4 {
-  font-size: 1.75rem;
+  font-size: calc(1.25rem + 1vw);
 
-  margin: 0.75rem 0;
+  margin: 1vw 1vw;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: calc(1rem + 1vw);
 
-  margin: 0.75rem 0;
+  margin: 1vw 1vw;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: calc(0.75rem + 1vw);
 
-  margin: 0.75rem 0;
+  margin: 1vw 1vw;
 }
 
 p {
@@ -76,8 +77,8 @@ a {
   color: ${({ theme }) => theme && theme.info};
   text-decoration: none;
   border: none;
-  padding: ${props => props.padding || 1}vw;
-  margin: ${props => props.margin || 0}vw;
+  padding: ${(props) => props.padding || 1}vw;
+  margin: ${(props) => props.margin || 0}vw;
   &:hover {
     filter: brightness(2);
   }
@@ -96,7 +97,7 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme && theme.toggleColor};
   border: none;
   border-radius: 0.5rem;
-  padding: ${props => props.padding || 4}px;
+  padding: ${(props) => props.padding || 4}px;
   font-size: ${(props) => props.fontSize || 1.5}rem;
   &:hover {
     cursor: pointer;
@@ -106,12 +107,16 @@ export const CardButton = styled.button`
   background-color: ${({ theme }) => theme && theme.primary};
   border: none;
   border-radius: 0.5rem;
-  padding: ${props => props.padding || 4}px;
-  margin: ${props => props.margin || 0}px;
+  padding: ${(props) => props.padding || 4}px;
+  margin: ${(props) => props.margin || 0}px;
   font-size: ${(props) => props.fontSize || 1.5}rem;
   &:hover {
     cursor: pointer;
   }
+`;
+export const P = styled.p`
+  font-size: calc(0.5rem + 1vw);
+  margin: 1.5vw 1.5vw;
 `;
 export const CenterDiv = styled.div`
   display: flex;

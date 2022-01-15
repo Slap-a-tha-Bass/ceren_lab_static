@@ -9,143 +9,254 @@
 
 /* CSS */
 .active {
-    background-color: red;
+  background-color: red;
 }
 .background-img {
-    background-image: url('/src/photos/microbiome.jpg');
-    background-position: center;
-    background-attachment: relative;
-    background-size: cover;
-    background-repeat: none;
-    filter: brightness(70%);
-    height: 16rem;
+  background-image: url("/src/photos/microbiome.jpg");
+  background-position: center;
+  background-attachment: relative;
+  background-size: cover;
+  background-repeat: none;
+  filter: brightness(70%);
+  height: 16rem;
+}
+.wheelchair-img {
+  background-image: url("/src/photos/wheelchair.jpeg");
+  background-position: center;
+  background-attachment: relative;
+  background-size: cover;
+  background-repeat: none;
+  border-radius: 1rem;
+  height: 24rem;
+}
+.nav-button {
+  border: 1px solid rgb(30, 32, 30);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+.nav-button:hover {
+  color: rgb(31, 255, 160);
+}
+.nav-spacing {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.toggle-button {
+  border: 1px solid black;
+  outline: black;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  padding: none;
+  margin: none;
+  color: rgb(31, 255, 160);
+  background-color: black;
+}
+.margin-neg {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+.join-button {
+  width: 5rem;
+  border: 1px solid rgb(31, 255, 160);
+  border-radius: 3rem;
+  padding: 0.4rem;
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: rgb(31, 255, 160);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: none;
+}
+.join-button:hover {
+  color: black;
+  font-weight: bold;
+}
+.header-text {
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+/* ANIMATION SCHEMES */
+.transition {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+.transition-1 {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+.transition-2 {
+  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s; /* Firefox < 16 */
+  -ms-animation: fadein 6s; /* Internet Explorer */
+  -o-animation: fadein 6s; /* Opera < 12.1 */
+  animation: fadein 6s;
+}
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(31, 255, 160); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .wheelchair-img {
-    background-image: url('/src/photos/wheelchair.jpeg');
-    background-position: center;
-    background-attachment: relative;
-    background-size: cover;
-    background-repeat: none;
-    border-radius: 1rem;
-    height: 24rem;
+  to {
+    opacity: 1;
   }
-  .nav-button {
-    border: 1px solid rgb(30,32,30);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 0.5rem;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1rem;
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .nav-button:hover {
-    color: rgb(31, 255, 160);
+  to {
+    opacity: 1;
   }
-  .nav-spacing {
-    margin-left: 3rem;
-    margin-right: 3rem;
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .toggle-button {
-    border: 1px solid black;
-    outline: black;
-    width: 3rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-    padding: none;
-    margin: none;
-    color: rgb(31, 255, 160);
-    background-color: black;
+  to {
+    opacity: 1;
   }
-  .margin-neg {
-    margin-right: -1rem;
-    margin-left: -1rem;
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .join-button {
-    width: 5rem;
-    border: 1px solid rgb(31, 255, 160);
-    border-radius: 3rem;
-    padding: 0.4rem;
-    color: black;
-    font-size: 1.2rem;
-    text-decoration: none;
-    background-color: rgb(31, 255, 160);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: none;
+  to {
+    opacity: 1;
   }
-  .join-button:hover {
-    color: black;
-    font-weight: bold;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  .header-text {
-    color: whitesmoke;
-    font-size: 3rem;
+  to {
+    width: 100%;
   }
-  
-  /* ANIMATION SCHEMES */
-  .transition {
-    margin-top: 25px;
-    font-size: 21px;
-  
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-         -o-animation: fadein 4s; /* Opera < 12.1 */
-            animation: fadein 4s;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  50% {
+    border-color: rgb(31, 255, 160);
   }
-  
-  /* Firefox < 16 */
-  @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+}
+@-moz-keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  to {
+    width: 100%;
   }
-  
-  /* Internet Explorer */
-  @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  .gif {
-    background-image: url('/src/photos/micro.webp');
-    background-position: center;
-    background-attachment: relative;
-    background-size: cover;
-    background-repeat: none;
-    filter:brightness(50%);
-    height: 16rem;
+  50% {
+    border-color: rgb(31, 255, 160);
   }
-  /* COLOR SCHEMES */
-  .bg-color {
-    background-color: rgb(30,32,30);
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
   }
-  .transparent {
-    opacity: 20%;
+  to {
+    width: 100%;
   }
-  .text-font {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* The typewriter cursor effect */
+@-ms-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  .card-header-info {
-    background-color: rgb(60,64,60)!important;
-    color: whitesmoke;
+  50% {
+    border-color: rgb(31, 255, 160);
   }
-  .info {
-    color:rgb(31, 255, 160)!important;
-    background-color: rgb(31, 255, 160)!important;
+}
+@-ms-keyframes typing {
+  from {
+    width: 0;
   }
-  
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(31, 255, 160);
+  }
+}
+.gif {
+  background-image: url("/src/photos/micro.webp");
+  background-position: center;
+  background-attachment: relative;
+  background-size: cover;
+  background-repeat: none;
+  filter: brightness(50%);
+  height: 16rem;
+}
+/* COLOR SCHEMES */
+.bg-color {
+  background-color: rgb(30, 32, 30);
+}
+.transparent {
+  opacity: 20%;
+}
+.text-font {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.card-header-info {
+  background-color: rgb(60, 64, 60) !important;
+  color: whitesmoke;
+}
+.info {
+  color: rgb(31, 255, 160) !important;
+  background-color: rgb(31, 255, 160) !important;
+}
 
 /* CSS */
