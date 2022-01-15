@@ -28,7 +28,7 @@ h6 {
   font-family: ${({ theme }) => theme && theme.fonts.heading};
   line-height: 1.1;
   text-transform: capitalize;
-  color: ${({ theme }) => theme && theme.secondary}
+  color: ${({ theme }) => theme && theme.info}
 }
 
 h1 {
@@ -76,20 +76,74 @@ a {
   color: ${({ theme }) => theme && theme.info};
   text-decoration: none;
   border: none;
-  border-radius: 10px;
-  padding: 1vw;
+  padding: ${props => props.padding || 1}vw;
+  margin: ${props => props.margin || 0}vw;
+  &:hover {
+    filter: brightness(2);
+  }
+  :active {
+    color: ${({ theme }) => theme && theme.info};
+    font-weight: bolder;
+    border-bottom: 1px solid ${({ theme }) => theme && theme.info};
+  }
 }
 button {
   font-family: ${({ theme }) => theme && theme.fonts.heading};
 }
 `;
 export const Button = styled.button`
-  color: ${({ theme }) => theme && theme.dark};
-  background-color: ${({ theme }) => theme && theme.secondary};
+  color: ${({ theme }) => theme && theme.info};
+  background-color: ${({ theme }) => theme && theme.toggleColor};
   border: none;
   border-radius: 0.5rem;
-  padding: 4px;
+  padding: ${props => props.padding || 4}px;
+  font-size: ${(props) => props.fontSize || 1.5}rem;
   &:hover {
     cursor: pointer;
   }
+`;
+export const CardButton = styled.button`
+  background-color: ${({ theme }) => theme && theme.primary};
+  border: none;
+  border-radius: 0.5rem;
+  padding: ${props => props.padding || 4}px;
+  margin: ${props => props.margin || 0}px;
+  font-size: ${(props) => props.fontSize || 1.5}rem;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+export const CenterDiv = styled.div`
+  display: flex;
+  place-content: center;
+`;
+export const ChangeBackgroundColor = styled.div`
+  height: 100%;
+  background-color: ${({ theme }) => theme && theme.text};
+  padding: 3vw;
+`;
+export const SameBackgroundColor = styled.div`
+  height: 100%;
+  background-color: ${({ theme }) => theme && theme.primary};
+  padding: 3vw;
+`;
+export const CardContainter = styled.div`
+  width: 50vw;
+  background-color: ${({ theme }) => theme && theme.primary};
+  padding: 2vw;
+`;
+export const CardContainter2 = styled.div`
+  width: 50vw;
+  background-color: ${({ theme }) => theme && theme.toggleColor};
+  padding: 2vw;
+`;
+export const SpanHeader = styled.span`
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: ${({ theme }) => theme && theme.highlight};
+`;
+export const SpanText = styled.span`
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  color: ${({ theme }) => theme && theme.info};
 `;

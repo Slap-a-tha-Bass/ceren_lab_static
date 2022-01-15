@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import NavNavbar from "./Navbar";
 import Footer from "../components/Footer";
 
 const Container = styled.div`
@@ -9,11 +9,13 @@ const Container = styled.div`
 
 const Layout = ({ children, ...props }) => {
   return (
-    <Container {...props}>
-      <Navbar {...props} />
-      {children}
-      <Footer />
-    </Container>
+    <>
+      <NavNavbar {...props} />
+      <Container {...props}>
+        {children}
+        <Footer />
+      </Container>
+    </>
   );
 };
 

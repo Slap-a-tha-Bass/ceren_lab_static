@@ -1,7 +1,151 @@
+/* FONT OPTIONS */
+
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@400;700;900&display=swap"); */
-
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap") */
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap")
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap") */
+
+/* FONT OPTIONS */
+
+/* CSS */
+.active {
+    background-color: red;
+}
+.background-img {
+    background-image: url('/src/photos/microbiome.jpg');
+    background-position: center;
+    background-attachment: relative;
+    background-size: cover;
+    background-repeat: none;
+    filter: brightness(70%);
+    height: 16rem;
+  }
+  .wheelchair-img {
+    background-image: url('/src/photos/wheelchair.jpeg');
+    background-position: center;
+    background-attachment: relative;
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 1rem;
+    height: 24rem;
+  }
+  .nav-button {
+    border: 1px solid rgb(30,32,30);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+  .nav-button:hover {
+    color: rgb(31, 255, 160);
+  }
+  .nav-spacing {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .toggle-button {
+    border: 1px solid black;
+    outline: black;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: none;
+    margin: none;
+    color: rgb(31, 255, 160);
+    background-color: black;
+  }
+  .margin-neg {
+    margin-right: -1rem;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+  }
+  .join-button {
+    width: 5rem;
+    border: 1px solid rgb(31, 255, 160);
+    border-radius: 3rem;
+    padding: 0.4rem;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: rgb(31, 255, 160);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: none;
+  }
+  .join-button:hover {
+    color: black;
+    font-weight: bold;
+  }
+  .header-text {
+    color: whitesmoke;
+    font-size: 3rem;
+  }
+  
+  /* ANIMATION SCHEMES */
+  .transition {
+    margin-top: 25px;
+    font-size: 21px;
+  
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  .gif {
+    background-image: url('/src/photos/micro.webp');
+    background-position: center;
+    background-attachment: relative;
+    background-size: cover;
+    background-repeat: none;
+    filter:brightness(50%);
+    height: 16rem;
+  }
+  /* COLOR SCHEMES */
+  .bg-color {
+    background-color: rgb(30,32,30);
+  }
+  .transparent {
+    opacity: 20%;
+  }
+  .text-font {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .card-header-info {
+    background-color: rgb(60,64,60)!important;
+    color: whitesmoke;
+  }
+  .info {
+    color:rgb(31, 255, 160)!important;
+    background-color: rgb(31, 255, 160)!important;
+  }
+  
+
+/* CSS */

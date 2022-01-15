@@ -11,6 +11,8 @@ const styles = {
     secondary: `rgb(31, 255, 160)`,
     info: `rgb(31, 255, 160)`,
     dark: `black`,
+    toggleColor: `rgba(12,12,12, 0.8)`,
+    highlight: `whitesmoke`,
     text: `#fff`,
     bgColor: `linear-gradient(
       344deg,
@@ -27,6 +29,8 @@ const styles = {
     secondary: `rgb(31, 255, 160)`,
     info: `black`,
     dark: `black`,
+    toggleColor: `#FCFCFC`,
+    highlight: `gray`,
     text: `#000`,
     bgColor: `linear-gradient(344deg, #FCFCFC 0%, #F9F9F9 100%);`,
     ...styles,
