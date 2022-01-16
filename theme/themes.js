@@ -10,7 +10,7 @@ const styles = {
     primary: `rgba(35,35,35, 0.3)`,
     secondary: `rgb(31, 255, 160)`,
     info: `rgb(31, 255, 160)`,
-    dark: `black`,
+    dark: `dark`,
     toggleColor: `rgba(12,12,12, 0.8)`,
     highlight: `whitesmoke`,
     text: `#fff`,

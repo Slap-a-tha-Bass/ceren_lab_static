@@ -160,3 +160,47 @@ export const SpanText = styled.span`
 export const PageHeader = styled.h1`
   color: ${({ theme }) => theme && theme.toggleColor};
 `;
+export const FormGroup = styled.div`
+  color: ${({ theme }) => theme && theme.dark};
+  display: block;
+  width: 40vw;
+  margin: 2vw auto;
+  border-radius: 10px;
+  background-color: ${({ theme }) => theme && theme.primary};
+`;
+export const Label = styled.label`
+  padding-top: 1vw;
+  margin: 0.5vw;
+  color: ${({ theme }) => theme && theme.info};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid ${({ theme }) => theme && theme.info};
+  border-radius: 25%;
+  width: 6vw;
+`;
+export const Input = styled.input`
+  border: none;
+  border-bottom: 2px solid ${({ theme }) => theme && theme.info};
+  font-size: 1.5rem;
+  padding: 1vw;
+  width: 40vw;
+  background-color: whitesmoke;
+  &:focus {
+    outline: none;
+  }
+`;
+export const Textarea = styled.textarea`
+  border: none;
+  border-bottom: 2px solid ${({ theme }) => theme && theme.info};
+  font-size: 1.5rem;
+  caret-color: black;
+  margin-top: 1vw;
+  padding: 1vw;
+  width: 40vw;
+  height: 15vw;
+  background-color: whitesmoke;
+  &:focus {
+    outline: none;
+  }
+`;
