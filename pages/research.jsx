@@ -26,9 +26,7 @@ const Research = () => {
             BSc, Erika D. Womack, PhD, Amie McLain, MD, Ceren Yarar-Fisher, PT,
             PhD
           </p>
-          <Button>
-            <Link href="">View full article</Link>
-          </Button>
+          <Button>View full article</Button>
         </CardContainer>
         <CardContainer>
           <h6>
@@ -39,9 +37,7 @@ const Research = () => {
             Jia Li, William Van Der Pol, Mualla Eraslan, Amie McLain, Hatice
             Cetin, Baris Cetin, Casey Morrow, Tiffany Carson, Ceren Yarar-Fisher
           </p>
-          <Button>
-            <Link href="">View full article</Link>
-          </Button>
+          <Button>View full article</Button>
         </CardContainer>
       </CenterDiv>
     </SameBackgroundColor>
