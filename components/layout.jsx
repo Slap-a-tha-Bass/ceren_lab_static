@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import NavNavbar from "./Navbar";
-import Footer from "../components/Footer";
+import NavNavbar from "./navbar";
+import Footer from "./Footer";
 
 const Container = styled.div`
   height: 100%;
