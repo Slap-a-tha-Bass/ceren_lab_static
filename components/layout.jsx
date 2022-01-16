@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import NavNavbar from "./navbar";
-import Footer from "./Footer";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const Container = styled.div`
   height: 100%;
@@ -10,7 +10,7 @@ const Container = styled.div`
 const Layout = ({ children, ...props }) => {
   return (
     <>
-      <NavNavbar {...props} />
+      <Navbar {...props} />
       <Container {...props}>
         {children}
         <Footer />
