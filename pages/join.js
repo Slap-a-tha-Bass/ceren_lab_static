@@ -1,8 +1,6 @@
 const Join = () => {
     return (
-        <div>
-            Join
-        </div>
+        <h1>Join us today!</h1>
     )
 }
 

@@ -1,17 +1,21 @@
 import Link from "next/link";
 import {
   CardButton,
-  CardContainter2,
+  CardContainer2,
   CenterDiv,
   ChangeBackgroundColor,
-  P
+  P,
+  PageHeader,
 } from "../theme/globalStyles";
 
 const Mission = () => {
   return (
     <ChangeBackgroundColor>
       <CenterDiv>
-        <CardContainter2 className="transition">
+        <PageHeader>Mission</PageHeader>
+      </CenterDiv>
+      <CenterDiv>
+        <CardContainer2 className="transition">
           <h1 className="transition-1">Who we are</h1>
           <P className="transition-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,7 +28,7 @@ const Mission = () => {
               <Link href="/people">Our Team</Link>
             </CardButton>
           </div>
-        </CardContainter2>
+        </CardContainer2>
       </CenterDiv>
     </ChangeBackgroundColor>
   );

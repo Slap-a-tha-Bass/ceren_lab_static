@@ -81,6 +81,7 @@ a {
   margin: ${(props) => props.margin || 0}vw;
   &:hover {
     filter: brightness(2);
+    cursor: pointer;
   }
   :active {
     color: ${({ theme }) => theme && theme.info};
@@ -132,15 +133,19 @@ export const SameBackgroundColor = styled.div`
   background-color: ${({ theme }) => theme && theme.primary};
   padding: 3vw;
 `;
-export const CardContainter = styled.div`
-  width: 50vw;
+export const CardContainer = styled.div`
+  width: 49vw;
   background-color: ${({ theme }) => theme && theme.primary};
   padding: 2vw;
+  box-shadow: 10px 10px 5px black;
+  margin: 1vw;
 `;
-export const CardContainter2 = styled.div`
-  width: 50vw;
+export const CardContainer2 = styled.div`
+  width: 49vw;
   background-color: ${({ theme }) => theme && theme.toggleColor};
   padding: 2vw;
+  box-shadow: 10px 10px 5px black;
+  margin: 1vw;
 `;
 export const SpanHeader = styled.span`
   padding-left: 1vw;
@@ -151,4 +156,7 @@ export const SpanText = styled.span`
   padding-left: 0.5vw;
   padding-right: 0.5vw;
   color: ${({ theme }) => theme && theme.info};
+`;
+export const PageHeader = styled.h1`
+  color: ${({ theme }) => theme && theme.toggleColor};
 `;

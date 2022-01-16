@@ -16,7 +16,7 @@ import Christian from "../photos/christian-headshot.png";
 import {
   SameBackgroundColor,
   CenterDiv,
-  CardContainter,
+  CardContainer,
   SpanText,
   SpanHeader,
   P,
@@ -26,7 +26,7 @@ const People = () => {
   return (
     <SameBackgroundColor>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Ceren Yarar-Fisher</h3>
           </CenterDiv>
@@ -73,10 +73,10 @@ const People = () => {
             University/Turkey via Erasmus International Credit Mobility Program.
             Among her students, over 70% are racial ethnic minorities.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Erika Womack, PhD</h3>
           </CenterDiv>
@@ -119,10 +119,10 @@ const People = () => {
             home improvement, traveling domestically to explore different cities
             along with their food and culture, tailgating, and relaxing.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Jia Li, PhD</h3>
           </CenterDiv>
@@ -160,10 +160,10 @@ const People = () => {
             Foundation postdoctoral fellowship. I love spending time with my
             family, cooking cuisines from across the world, and traveling.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Amal Alharbi</h3>
           </CenterDiv>
@@ -194,10 +194,10 @@ const People = () => {
             spending time doing outdoor activities with my kids, hanging out
             with my friends, cooking new recipes, and swimming.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Miles Grigorian</h3>
           </CenterDiv>
@@ -235,10 +235,10 @@ const People = () => {
             Foundation postdoctoral fellowship. I love spending time with my
             family, cooking cuisines from across the world, and traveling.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Marguerite Marquez</h3>
           </CenterDiv>
@@ -274,10 +274,10 @@ const People = () => {
             Coordinator for Equal Access Birmingham, a free clinic that serves
             the underinsured population of Birmingham, AL.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Zoe Samira Evans</h3>
           </CenterDiv>
@@ -311,10 +311,10 @@ const People = () => {
             help guide my future options. My hobbies include cheering, shopping,
             eating, reading, and going to church.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Sarah Taylor</h3>
           </CenterDiv>
@@ -345,10 +345,10 @@ const People = () => {
             tennis, running, cooking and baking, traveling, and exploring
             Birmingham’s amazing restaurants with my family and friends!
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Mualla Eraslan</h3>
           </CenterDiv>
@@ -380,10 +380,10 @@ const People = () => {
             electrical stimulation and high protein diet on metabolic and
             hypertrophic signaling in the paralyzed muscle.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Hatice Cetin</h3>
           </CenterDiv>
@@ -413,10 +413,10 @@ const People = () => {
             studying the effects of neuromuscular electrical stimulation on
             muscle metabolism in individuals with sub-acute spinal cord injury.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Baris Cetin</h3>
           </CenterDiv>
@@ -446,10 +446,10 @@ const People = () => {
             electrical stimualtion on muscle metabolism in individuals with
             sub-acute spinal cord injury.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Perry W. Griffin II</h3>
           </CenterDiv>
@@ -501,10 +501,10 @@ const People = () => {
             questions and seek answers that may lead to improvements in such
             patients’ quality of life is a reward without parallel.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Adarsh Kulkani</h3>
           </CenterDiv>
@@ -547,10 +547,10 @@ const People = () => {
             significantly improves motor and sensory function as well as
             functional independence in patients with complete SCI.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
       <CenterDiv>
-        <CardContainter className="transition">
+        <CardContainer className="transition">
           <CenterDiv>
             <h3>Christian Behren</h3>
           </CenterDiv>
@@ -584,7 +584,7 @@ const People = () => {
             interests include running, hiking, cycling, cooking, traveling and
             hanging out with my French Bulldog, Django.
           </P>
-        </CardContainter>
+        </CardContainer>
       </CenterDiv>
     </SameBackgroundColor>
   );
