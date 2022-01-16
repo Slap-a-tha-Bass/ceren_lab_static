@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { WiSunset, WiMoonWaxingCrescent1 } from "react-icons/wi";
-
-import { Button } from "../theme/globalStyles";
+import { respondTo } from "../breakpoints/_respondTo";
+import { Button, A } from "../theme/globalStyles";
 
 const Container = styled.nav`
   display: flex;
@@ -13,7 +13,15 @@ const Container = styled.nav`
   padding: 1vw;
 `;
 const Logo = styled.div`
-  font-size: 3rem;
+  ${respondTo.sm`
+    font-size: calc(1.5rem + 1vw);
+  `}
+  ${respondTo.md`
+    font-size: calc(2rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(2.5rem + 1vw);
+  `}
 `;
 const Navbar = ({ setTheme, theme }) => {
   const [isThemed, setIsThemed] = useState(false);
@@ -26,12 +34,12 @@ const Navbar = ({ setTheme, theme }) => {
       <Logo>
         <Link href="/">proSCI</Link>
       </Logo>
-      <Link href="/mission">who we are</Link>
-      <Link href="/research">research</Link>
-      <Link href="/people">people</Link>
-      <Link href="/news">news</Link>
-      <Link href="/resources">resources</Link>
-      <Link href="/join">join</Link>
+      <A href="/mission">who we are</A>
+      <A href="/research">research</A>
+      <A href="/people">people</A>
+      <A href="/news">news</A>
+      <A href="/resources">resources</A>
+      <A href="/join">join</A>
       {isThemed ? (
         <Button primary onClick={themeToggler}>
           <WiMoonWaxingCrescent1 />

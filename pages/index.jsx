@@ -9,6 +9,7 @@ import {
   SpanHeader,
   SpanText,
   P,
+  H1,
 } from "../theme/globalStyles";
 import Mission from "./mission";
 import News from "./news";
@@ -32,12 +33,13 @@ export default function Home(props) {
       <SameBackgroundColor>
         <CenterDiv>
           <CardContainer className="transition">
-            <h1 className="typewriter">A rebel's approach</h1>
+            <H1 className="typewriter">A rebel's approach</H1>
             <P className="transition-2">
               Changing <SpanText>spinal cord injury</SpanText>, acute and chronic
               care, through using E-Stim, ketogenic dietary strategies, and gut
               microbiome modifications.
             </P>
+            <H1>Testing...</H1>
           </CardContainer>
           <CardContainer>
             <CenterDiv>

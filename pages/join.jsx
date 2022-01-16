@@ -5,13 +5,14 @@ import {
   FormGroup,
   Textarea,
   CenterDiv,
+  H1,
 } from "../theme/globalStyles";
 
 const Join = () => {
   return (
     <>
       <CenterDiv>
-        <h1>Join our team</h1>
+        <H1>Join our team</H1>
       </CenterDiv>
       <FormGroup>
         <Label htmlFor="">Name</Label>

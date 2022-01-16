@@ -20,6 +20,8 @@ import {
   SpanText,
   SpanHeader,
   P,
+  H3,
+  H6,
 } from "../theme/globalStyles";
 
 const People = () => {
@@ -28,10 +30,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Ceren Yarar-Fisher</h3>
+            <H3>Ceren Yarar-Fisher</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Principal Investigator</h6>
+            <H6>Principal Investigator</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -78,10 +80,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Erika Womack, PhD</h3>
+            <H3>Erika Womack, PhD</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Laboratory Manager</h6>
+            <H6>Laboratory Manager</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -124,10 +126,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Jia Li, PhD</h3>
+            <H3>Jia Li, PhD</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Post-Doctoral Fellow</h6>
+            <H6>Post-Doctoral Fellow</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -165,10 +167,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Amal Alharbi</h3>
+            <H3>Amal Alharbi</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>PhD Student</h6>
+            <H6>PhD Student</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -199,10 +201,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Miles Grigorian</h3>
+            <H3>Miles Grigorian</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>PhD Student</h6>
+            <H6>PhD Student</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -240,10 +242,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Marguerite Marquez</h3>
+            <H3>Marguerite Marquez</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Student Physical Therapist</h6>
+            <H6>Student Physical Therapist</H6>
           </CenterDiv>
           <CenterDiv>
             {/* <Image
@@ -279,10 +281,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Zoe Samira Evans</h3>
+            <H3>Zoe Samira Evans</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Student Intern</h6>
+            <H6>Student Intern</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -316,10 +318,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Sarah Taylor</h3>
+            <H3>Sarah Taylor</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Visiting Student</h6>
+            <H6>Visiting Student</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -350,10 +352,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Mualla Eraslan</h3>
+            <H3>Mualla Eraslan</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Laboratory Manager</h6>
+            <H6>Laboratory Manager</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -385,10 +387,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Hatice Cetin</h3>
+            <H3>Hatice Cetin</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Erasmus Research Scholar</h6>
+            <H6>Erasmus Research Scholar</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -418,10 +420,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Baris Cetin</h3>
+            <H3>Baris Cetin</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Erasmus Research Scholar</h6>
+            <H6>Erasmus Research Scholar</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -451,10 +453,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Perry W. Griffin II</h3>
+            <H3>Perry W. Griffin II</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Summer Medical Student</h6>
+            <H6>Summer Medical Student</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -506,10 +508,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Adarsh Kulkani</h3>
+            <H3>Adarsh Kulkani</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Summer Medical Student</h6>
+            <H6>Summer Medical Student</H6>
           </CenterDiv>
           <CenterDiv>
             <Image
@@ -552,10 +554,10 @@ const People = () => {
       <CenterDiv>
         <CardContainer className="transition">
           <CenterDiv>
-            <h3>Christian Behren</h3>
+            <H3>Christian Behren</H3>
           </CenterDiv>
           <CenterDiv>
-            <h6>Rotation Student</h6>
+            <H6>Rotation Student</H6>
           </CenterDiv>
           <CenterDiv>
             <Image

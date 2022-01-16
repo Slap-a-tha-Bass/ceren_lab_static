@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle, css } from "styled-components";
-
+import { respondTo } from "../breakpoints/_respondTo";
 export const GlobalStyle = createGlobalStyle`
 /* resets */
 * {
@@ -33,44 +33,39 @@ h6 {
 }
 
 h1 {
-  font-size: calc(2rem + 1vw);
-
+  font-size: calc(1rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h2 {
-  font-size: calc(1.75rem + 1vw);
-
+  font-size: calc(0.8rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h3 {
-  font-size: calc(1.5rem + 1vw);
-
+  font-size: calc(0.7rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h4 {
-  font-size: calc(1.25rem + 1vw);
-
+  font-size: calc(0.6rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h5 {
-  font-size: calc(1rem + 1vw);
-
+  font-size: calc(0.5+ 1vw);
   margin: 1vw 1vw;
 }
 
 h6 {
-  font-size: calc(0.75rem + 1vw);
-
+  font-size: calc(0.4rem + 1vw);
   margin: 1vw 1vw;
 }
 
 p {
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  font-size: calc(0.25rem + 1vw);
 }
 
 a {
@@ -92,6 +87,53 @@ a {
 button {
   font-family: ${({ theme }) => theme && theme.fonts.heading};
 }
+`;
+export const A = styled.a`
+  ${respondTo.sm`
+    font-size: calc(0.5rem + 1vw);
+  `}
+  ${respondTo.md`
+    font-size: calc(0.75rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(1rem + 1vw);
+  `}
+`;
+export const H1 = styled.h1`
+  ${respondTo.md`
+    font-size: calc(1.5rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(2rem + 1vw);
+  `}
+`;
+export const H3 = styled.h3`
+  ${respondTo.md`
+    font-size: calc(1.1rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(1.6rem + 1vw);
+  `}
+`;
+export const H6 = styled.h6`
+  ${respondTo.md`
+    font-size: calc(0.6rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(1.1rem + 1vw);
+  `}
+`;
+export const P = styled.p`
+  margin: 1.5vw 1.5vw;
+  ${respondTo.sm`
+    font-size: calc(0.35rem + 1vw);
+  `}
+  ${respondTo.md`
+    font-size: calc(0.5rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(0.65rem + 1vw);
+  `}
 `;
 export const Button = styled.button`
   color: ${({ theme }) => theme && theme.info};
@@ -115,10 +157,6 @@ export const CardButton = styled.button`
     cursor: pointer;
   }
 `;
-export const P = styled.p`
-  font-size: calc(0.5rem + 1vw);
-  margin: 1.5vw 1.5vw;
-`;
 export const CenterDiv = styled.div`
   display: flex;
   place-content: center;
@@ -134,14 +172,14 @@ export const SameBackgroundColor = styled.div`
   padding: 3vw;
 `;
 export const CardContainer = styled.div`
-  width: 49vw;
+  width: 75vw;
   background-color: ${({ theme }) => theme && theme.primary};
   padding: 2vw;
   box-shadow: 10px 10px 5px black;
   margin: 1vw;
 `;
 export const CardContainer2 = styled.div`
-  width: 49vw;
+  width: 75vw;
   background-color: ${({ theme }) => theme && theme.toggleColor};
   padding: 2vw;
   box-shadow: 10px 10px 5px black;
@@ -159,6 +197,12 @@ export const SpanText = styled.span`
 `;
 export const PageHeader = styled.h1`
   color: ${({ theme }) => theme && theme.toggleColor};
+  ${respondTo.md`
+    font-size: calc(1.5rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(2rem + 1vw);
+  `}
 `;
 export const FormGroup = styled.div`
   color: ${({ theme }) => theme && theme.dark};

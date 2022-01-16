@@ -2,6 +2,7 @@ import {
   CardContainer2,
   CenterDiv,
   ChangeBackgroundColor,
+  H1,
   P,
   PageHeader,
 } from "../theme/globalStyles";
@@ -14,7 +15,7 @@ const News = () => {
       </CenterDiv>
       <CenterDiv>
         <CardContainer2>
-          <h1>News Article 1</h1>
+          <H1>News Article 1</H1>
           <P>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perspiciatis excepturi commodi praesentium laboriosam! Blanditiis
@@ -23,7 +24,7 @@ const News = () => {
           </P>
         </CardContainer2>
         <CardContainer2>
-          <h1>News Article 2</h1>
+          <H1>News Article 2</H1>
           <P>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perspiciatis excepturi commodi praesentium laboriosam! Blanditiis

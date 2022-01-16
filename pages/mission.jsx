@@ -4,6 +4,7 @@ import {
   CardContainer2,
   CenterDiv,
   ChangeBackgroundColor,
+  H1,
   P,
   PageHeader,
 } from "../theme/globalStyles";
@@ -16,7 +17,7 @@ const Mission = () => {
       </CenterDiv>
       <CenterDiv>
         <CardContainer2 className="transition">
-          <h1 className="transition-1">Who we are</h1>
+          <H1 className="transition-1">Who we are</H1>
           <P className="transition-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Perspiciatis excepturi commodi praesentium laboriosam! Blanditiis
