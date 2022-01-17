@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { WiSunset, WiMoonWaxingCrescent1 } from "react-icons/wi";
@@ -23,12 +23,44 @@ const Logo = styled.div`
     font-size: calc(2.5rem + 1vw);
   `}
 `;
+
 const Navbar = ({ setTheme, theme }) => {
   const [isThemed, setIsThemed] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
+  const [windowWidth, setWindowWidth] = useState();
+
   const themeToggler = () => {
     setTheme(theme === "dark" ? "light" : "dark");
     setIsThemed((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const searchWidth = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      window.addEventListener("resize", searchWidth);
+      searchWidth();
+      if (window.innerWidth > 750) {
+        setHamburger(true);
+      } else if (window.innerWidth < 750) {
+        setHamburger(false);
+      } else {
+        console.log("wtf");
+      }
+      return () => window.removeEventListener("resize", searchWidth);
+    }
+  }, []);
+  useEffect(() => {
+    if (windowWidth > 750) {
+      setHamburger(true);
+    } else {
+      setHamburger(false);
+    }
+  }, [windowWidth]);
+  console.log({ windowWidth });
+  console.log({ hamburger });
+
   return (
     <Container className="nav-link transition">
       <Logo>
