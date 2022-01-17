@@ -33,39 +33,39 @@ h6 {
 }
 
 h1 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1.25rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h2 {
-  font-size: calc(0.8rem + 1vw);
+  font-size: calc(1.1rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h3 {
-  font-size: calc(0.7rem + 1vw);
+  font-size: calc(1rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h4 {
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.9rem + 1vw);
   margin: 1vw 1vw;
 }
 
 h5 {
-  font-size: calc(0.5+ 1vw);
+  font-size: calc(0.85+ 1vw);
   margin: 1vw 1vw;
 }
 
 h6 {
-  font-size: calc(0.4rem + 1vw);
+  font-size: calc(0.75rem + 1vw);
   margin: 1vw 1vw;
 }
 
 p {
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  font-size: calc(0.25rem + 1vw);
+  font-size: calc(0.6rem + 1vw);
 }
 
 a {

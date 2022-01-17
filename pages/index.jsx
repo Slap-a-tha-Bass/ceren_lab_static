@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import GIFImg from "../photos/bacteria-dark.webp";
-
+import { useState, useEffect } from "react";
 import {
   CardContainer,
   CenterDiv,
@@ -15,52 +15,95 @@ import Mission from "./mission";
 import News from "./news";
 import Research from "./research";
 import Resources from "./resources";
+import mobileSetter from "../hooks/mobileSetter";
 
-export default function Home(props) {
-  console.log(
-    "%c Used NextJS and Styled Components for this project.",
-    "border: 1px solid rgb(31, 255, 160); padding: 10px; border-radius: 5px; color: rgb(31, 255, 160); background-color: rgb(60,60,60); font-size: 20px; font-family: monospace"
-  );
-  console.log(
-    "%c corey@deloach.dev",
-    "border: 1px solid rgb(31, 255, 160); padding: 10px; border-radius: 5px; color: rgb(31, 255, 160); background-color: rgb(60,60,60); font-size: 20px; font-family: monospace"
-  );
+export default function Home() {
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  useEffect(() => {
+    setHasLoaded(true);
+  }, [hasLoaded]);
+
+  if (hasLoaded) {
+    console.log(
+      "%c Used NextJS and Styled Components for this project.",
+      "border: 1px solid rgb(31, 255, 160); padding: 10px; border-radius: 5px; color: rgb(31, 255, 160); background-color: rgb(60,60,60); font-size: 20px; font-family: monospace"
+    );
+    console.log(
+      "%c corey@deloach.dev",
+      "border: 1px solid rgb(31, 255, 160); padding: 10px; border-radius: 5px; color: rgb(31, 255, 160); background-color: rgb(60,60,60); font-size: 20px; font-family: monospace"
+    );
+  }
+
+  const { isMobile } = mobileSetter();
+
   return (
     <>
       <Head>
         <title>proSCI Labs</title>
       </Head>
       <SameBackgroundColor>
-        <CenterDiv>
-          <CardContainer className="transition">
-            <H1 className="typewriter">A rebel's approach</H1>
-            <P className="transition-2">
-              Changing <SpanText>spinal cord injury</SpanText>, acute and chronic
-              care, through using E-Stim, ketogenic dietary strategies, and gut
-              microbiome modifications.
-            </P>
-            <H1>Testing...</H1>
-          </CardContainer>
-          <CardContainer>
+        {isMobile ? (
+          <>
             <CenterDiv>
-              <Image
-                className="transition-1"
-                src={GIFImg}
-                alt="Gif bacteria"
-                layout="fixed"
-                width={400}
-                height={400}
-                quality={100}
-                priority
-              />
+              <CardContainer className="transition">
+                <H1 className="typewriter">A rebel's approach</H1>
+                <P className="transition-2">
+                  Changing <SpanText>spinal cord injury</SpanText>, acute and
+                  chronic care, through using E-Stim, ketogenic dietary
+                  strategies, and gut microbiome modifications.
+                </P>
+              </CardContainer>
             </CenterDiv>
-          </CardContainer>
-        </CenterDiv>
+            <CenterDiv>
+              <CardContainer>
+                <CenterDiv>
+                  <Image
+                    className="transition-1"
+                    src={GIFImg}
+                    alt="Gif bacteria"
+                    layout="fixed"
+                    width={400}
+                    height={400}
+                    quality={100}
+                    priority
+                  />
+                </CenterDiv>
+              </CardContainer>
+            </CenterDiv>
+          </>
+        ) : (
+          <CenterDiv>
+            <CardContainer className="transition">
+              <H1 className="typewriter">A rebel's approach</H1>
+              <P className="transition-2">
+                Changing <SpanText>spinal cord injury</SpanText>, acute and
+                chronic care, through using E-Stim, ketogenic dietary
+                strategies, and gut microbiome modifications.
+              </P>
+              <H1>Testing...</H1>
+            </CardContainer>
+            <CardContainer>
+              <CenterDiv>
+                <Image
+                  className="transition-1"
+                  src={GIFImg}
+                  alt="Gif bacteria"
+                  layout="fixed"
+                  width={400}
+                  height={400}
+                  quality={100}
+                  priority
+                />
+              </CenterDiv>
+            </CardContainer>
+          </CenterDiv>
+        )}
       </SameBackgroundColor>
-      <Mission />
-      <Research />
-      <News />
-      <Resources />
+      {!isMobile && <Mission />}
+      {!isMobile && <Research />}
+      {!isMobile && <News />}
+      {!isMobile && <Resources />}
     </>
   );
 }

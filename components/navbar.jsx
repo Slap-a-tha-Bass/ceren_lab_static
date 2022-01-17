@@ -5,6 +5,8 @@ import { respondTo } from "../breakpoints/_respondTo";
 import { Button, Ul, Li } from "../theme/globalStyles";
 import { WiSunset, WiMoonWaxingCrescent1 } from "react-icons/wi";
 import { BiMenu } from "react-icons/bi";
+import mobileSetter from "../hooks/mobileSetter";
+
 const Container = styled.nav`
   display: flex;
   justify-content: space-around;
@@ -27,32 +29,13 @@ const Logo = styled.div`
 
 const Navbar = ({ setTheme, theme }) => {
   const [isThemed, setIsThemed] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
-  const [windowWidth, setWindowWidth] = useState();
+  const { isMobile } = mobileSetter();
 
   const themeToggler = () => {
     setTheme(theme === "dark" ? "light" : "dark");
     setIsThemed((prev) => !prev);
   };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const searchWidth = () => {
-        setWindowWidth(window.innerWidth);
-      };
-      window.addEventListener("resize", searchWidth);
-      searchWidth();
-      return () => window.removeEventListener("resize", searchWidth);
-    }
-  }, []);
-  useEffect(() => {
-    if (windowWidth < 750) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  }, [windowWidth]);
   const expandButton = () => {
     setIsClicked((isClicked) => !isClicked);
   };
