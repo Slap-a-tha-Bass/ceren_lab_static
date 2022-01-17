@@ -1,31 +1,9 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { respondTo } from "../breakpoints/_respondTo";
-import { Button, Ul, Li } from "../theme/globalStyles";
+import { Button, Ul, Li, Container, Logo } from "../theme/globalStyles";
 import { WiSunset, WiMoonWaxingCrescent1 } from "react-icons/wi";
 import { BiMenu } from "react-icons/bi";
 import mobileSetter from "../hooks/mobileSetter";
-
-const Container = styled.nav`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1vw;
-  padding: 1vw;
-`;
-const Logo = styled.div`
-  font-size: 1.5rem;
-  ${respondTo.sm`
-    font-size: calc(1.5rem + 1vw);
-  `}
-  ${respondTo.md`
-    font-size: calc(2rem + 1vw);
-  `}
-  ${respondTo.lg`
-    font-size: calc(2.5rem + 1vw);
-  `}
-`;
 
 const Navbar = ({ setTheme, theme }) => {
   const [isThemed, setIsThemed] = useState(false);
@@ -41,9 +19,9 @@ const Navbar = ({ setTheme, theme }) => {
   };
   return (
     <Container className="nav-link transition">
-      <Logo>
-        <Link href="/">proSCI</Link>
-      </Logo>
+      <Link href="/">
+        <Logo>proSCI</Logo>
+      </Link>
       {isMobile ? (
         <Button onClick={expandButton}>
           {isClicked && (

@@ -74,6 +74,7 @@ a {
   border: none;
   padding: ${(props) => props.padding || 1}vw;
   margin: ${(props) => props.margin || 0}vw;
+  font-size: calc(0.75rem + 1vw);
   &:hover {
     filter: brightness(2);
     cursor: pointer;
@@ -123,6 +124,28 @@ export const P = styled.p`
   ${respondTo.lg`
     font-size: calc(0.65rem + 1vw);
   `}
+`;
+export const Container = styled.nav`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1vw;
+  padding: 1vw;
+`;
+export const Logo = styled.div`
+  font-size: 1.5rem;
+  ${respondTo.sm`
+    font-size: calc(1.5rem + 1vw);
+  `}
+  ${respondTo.md`
+    font-size: calc(2rem + 1vw);
+  `}
+  ${respondTo.lg`
+    font-size: calc(3rem + 1vw);
+  `}
+  color: ${({ theme }) => theme && theme.info};
+  border-bottom: 1px solid ${({ theme }) => theme && theme.info};
+  border-radius: 25%;
 `;
 export const Button = styled.button`
   color: ${({ theme }) => theme && theme.info};
