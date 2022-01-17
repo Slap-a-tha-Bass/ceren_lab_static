@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import { WiSunset, WiMoonWaxingCrescent1 } from "react-icons/wi";
 import { respondTo } from "../breakpoints/_respondTo";
-import { Button, A } from "../theme/globalStyles";
-
+import { Button, Ul, Li } from "../theme/globalStyles";
+import { WiSunset, WiMoonWaxingCrescent1 } from "react-icons/wi";
+import { BiMenu } from "react-icons/bi";
 const Container = styled.nav`
   display: flex;
   justify-content: space-around;
@@ -13,6 +13,7 @@ const Container = styled.nav`
   padding: 1vw;
 `;
 const Logo = styled.div`
+  font-size: 1.5rem;
   ${respondTo.sm`
     font-size: calc(1.5rem + 1vw);
   `}
@@ -26,7 +27,8 @@ const Logo = styled.div`
 
 const Navbar = ({ setTheme, theme }) => {
   const [isThemed, setIsThemed] = useState(false);
-  const [hamburger, setHamburger] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const [windowWidth, setWindowWidth] = useState();
 
   const themeToggler = () => {
@@ -41,43 +43,63 @@ const Navbar = ({ setTheme, theme }) => {
       };
       window.addEventListener("resize", searchWidth);
       searchWidth();
-      if (window.innerWidth > 750) {
-        setHamburger(true);
-      } else if (window.innerWidth < 750) {
-        setHamburger(false);
-      } else {
-        console.log("wtf");
-      }
       return () => window.removeEventListener("resize", searchWidth);
     }
   }, []);
   useEffect(() => {
-    if (windowWidth > 750) {
-      setHamburger(true);
+    if (windowWidth < 750) {
+      setIsMobile(true);
     } else {
-      setHamburger(false);
+      setIsMobile(false);
     }
   }, [windowWidth]);
-  console.log({ windowWidth });
-  console.log({ hamburger });
-
+  const expandButton = () => {
+    setIsClicked((isClicked) => !isClicked);
+  };
   return (
     <Container className="nav-link transition">
       <Logo>
         <Link href="/">proSCI</Link>
       </Logo>
-      <A href="/mission">who we are</A>
-      <A href="/research">research</A>
-      <A href="/people">people</A>
-      <A href="/news">news</A>
-      <A href="/resources">resources</A>
-      <A href="/join">join</A>
+      {isMobile ? (
+        <Button onClick={expandButton}>
+          {isClicked && (
+            <Ul>
+              <Li>
+                <Link href="/mission">who we are</Link>
+              </Li>
+              <Li>
+                <Link href="/people">people</Link>
+              </Li>
+              <Li>
+                <Link href="/news">news</Link>
+              </Li>
+              <Li>
+                <Link href="/resources">resources</Link>
+              </Li>
+              <Li>
+                <Link href="/join">join</Link>
+              </Li>
+            </Ul>
+          )}
+          {!isClicked && <BiMenu style={{ fontSize: "2rem" }} />}
+        </Button>
+      ) : (
+        <div>
+          <Link href="/mission">who we are</Link>
+          <Link href="/research">research</Link>
+          <Link href="/people">people</Link>
+          <Link href="/news">news</Link>
+          <Link href="/resources">resources</Link>
+          <Link href="/join">join</Link>
+        </div>
+      )}
       {isThemed ? (
-        <Button primary onClick={themeToggler}>
+        <Button onClick={themeToggler}>
           <WiMoonWaxingCrescent1 />
         </Button>
       ) : (
-        <Button primary onClick={themeToggler}>
+        <Button onClick={themeToggler}>
           <WiSunset />
         </Button>
       )}

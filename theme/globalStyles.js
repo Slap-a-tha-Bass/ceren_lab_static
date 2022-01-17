@@ -88,17 +88,6 @@ button {
   font-family: ${({ theme }) => theme && theme.fonts.heading};
 }
 `;
-export const A = styled.a`
-  ${respondTo.sm`
-    font-size: calc(0.5rem + 1vw);
-  `}
-  ${respondTo.md`
-    font-size: calc(0.75rem + 1vw);
-  `}
-  ${respondTo.lg`
-    font-size: calc(1rem + 1vw);
-  `}
-`;
 export const H1 = styled.h1`
   ${respondTo.md`
     font-size: calc(1.5rem + 1vw);
@@ -247,4 +236,13 @@ export const Textarea = styled.textarea`
   &:focus {
     outline: none;
   }
+`;
+export const Ul = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`;
+export const Li = styled.li`
+  font-size: 1.5rem;
+  margin: 0.5rem 0.5rem;
 `;
