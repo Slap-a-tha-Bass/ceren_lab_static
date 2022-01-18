@@ -18,7 +18,6 @@ import Resources from "./resources";
 import mobileSetter from "../hooks/mobileSetter";
 
 export default function Home() {
-
   const { isMobile } = mobileSetter();
 
   return (
@@ -33,9 +32,10 @@ export default function Home() {
               <CardContainer className="transition">
                 <H1 className="typewriter">A rebel's approach</H1>
                 <P className="transition-2">
-                  Changing <SpanText>spinal cord injury</SpanText>, acute and
-                  chronic care, through using E-Stim, ketogenic dietary
-                  strategies, and gut microbiome modifications.
+                  Changing acute and chronic
+                  <SpanText>spinal cord injury</SpanText>care through using
+                  electronic stimulation, nutrition, and gut microbiome
+                  modifications.
                 </P>
               </CardContainer>
             </CenterDiv>
