@@ -90,14 +90,27 @@ button {
 }
 `;
 export const H1 = styled.h1`
-  ${respondTo.md`
+  font-size: 1.5rem;
+  ${respondTo.xs`
+    font-size: calc(1.25rem + 1vw);
+  `}
+  ${respondTo.sm`
     font-size: calc(1.5rem + 1vw);
+  `}
+  ${respondTo.md`
+    font-size: calc(1.75rem + 1vw);
   `}
   ${respondTo.lg`
     font-size: calc(2rem + 1vw);
   `}
 `;
 export const H3 = styled.h3`
+  ${respondTo.xs`
+    font-size: calc(0.75rem + 1vw);
+  `}
+  ${respondTo.sm`
+    font-size: calc(0.9rem + 1vw);
+  `}
   ${respondTo.md`
     font-size: calc(1.1rem + 1vw);
   `}
@@ -106,6 +119,12 @@ export const H3 = styled.h3`
   `}
 `;
 export const H6 = styled.h6`
+  ${respondTo.xs`
+    font-size: calc(0.4rem + 1vw);
+  `}
+  ${respondTo.sm`
+    font-size: calc(0.5rem + 1vw);
+  `}
   ${respondTo.md`
     font-size: calc(0.6rem + 1vw);
   `}
@@ -184,18 +203,14 @@ export const SameBackgroundColor = styled.div`
   padding: 3vw;
 `;
 export const CardContainer = styled.div`
-  width: 75vw;
+  width: 80vw;
   background-color: ${({ theme }) => theme && theme.primary};
   padding: 2vw;
   box-shadow: 10px 10px 5px black;
   margin: 1vw;
 `;
-export const CardContainer2 = styled.div`
-  width: 75vw;
+export const CardContainer2 = styled(CardContainer)`
   background-color: ${({ theme }) => theme && theme.toggleColor};
-  padding: 2vw;
-  box-shadow: 10px 10px 5px black;
-  margin: 1vw;
 `;
 export const SpanHeader = styled.span`
   padding-left: 1vw;
@@ -207,14 +222,8 @@ export const SpanText = styled.span`
   padding-right: 0.5vw;
   color: ${({ theme }) => theme && theme.info};
 `;
-export const PageHeader = styled.h1`
+export const PageHeader = styled(H1)`
   color: ${({ theme }) => theme && theme.toggleColor};
-  ${respondTo.md`
-    font-size: calc(1.5rem + 1vw);
-  `}
-  ${respondTo.lg`
-    font-size: calc(2rem + 1vw);
-  `}
 `;
 export const FormGroup = styled.div`
   color: ${({ theme }) => theme && theme.dark};

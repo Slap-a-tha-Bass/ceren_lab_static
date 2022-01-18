@@ -15,7 +15,7 @@ const mobileSetter = () => {
     }
   }, []);
   useEffect(() => {
-    if (windowWidth < 750) {
+    if (windowWidth < 992) {
       setIsMobile(true);
     } else {
       setIsMobile(false);

@@ -65,7 +65,6 @@ export default function Home() {
                 chronic care, through using E-Stim, ketogenic dietary
                 strategies, and gut microbiome modifications.
               </P>
-              <H1>Testing...</H1>
             </CardContainer>
             <CardContainer>
               <CenterDiv>
