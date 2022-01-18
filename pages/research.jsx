@@ -21,7 +21,7 @@ const Research = () => {
       {isMobile ? (
         <>
           <CenterDiv>
-            <CardContainer>
+            <CardContainer className="transition">
               <H6>
                 Gut Microbiome Composition and Serum Metabolome Profile Among
                 Individuals With Spinal Cord Injury and Normal Glucose Tolerance
@@ -36,7 +36,7 @@ const Research = () => {
             </CardContainer>
           </CenterDiv>
           <CenterDiv>
-            <CardContainer>
+            <CardContainer className="transition">
               <H6>
                 Comparison of the gut microbiome composition among individuals
                 with acute or long-standing spinal cord injury vs. able-bodied
@@ -53,7 +53,7 @@ const Research = () => {
         </>
       ) : (
         <CenterDiv>
-          <CardContainer>
+          <CardContainer className="transition">
             <H6>
               Gut Microbiome Composition and Serum Metabolome Profile Among
               Individuals With Spinal Cord Injury and Normal Glucose Tolerance
@@ -66,7 +66,7 @@ const Research = () => {
             </P>
             <Button>View full article</Button>
           </CardContainer>
-          <CardContainer>
+          <CardContainer className="transition">
             <H6>
               Comparison of the gut microbiome composition among individuals
               with acute or long-standing spinal cord injury vs. able-bodied

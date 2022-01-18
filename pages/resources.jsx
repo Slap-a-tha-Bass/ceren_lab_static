@@ -17,7 +17,7 @@ const Resources = () => {
       {isMobile ? (
         <>
           <CenterDiv>
-            <CardContainer>
+            <CardContainer className="transition">
               <h1>Resource 1</h1>
               <P>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -29,7 +29,7 @@ const Resources = () => {
             </CardContainer>
           </CenterDiv>
           <CenterDiv>
-            <CardContainer>
+            <CardContainer className="transition">
               <h1>Resource 2</h1>
               <P>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -43,7 +43,7 @@ const Resources = () => {
         </>
       ) : (
         <CenterDiv>
-          <CardContainer>
+          <CardContainer className="transition">
             <h1>Resource 1</h1>
             <P>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,7 +52,7 @@ const Resources = () => {
               blanditiis beatae maiores sed temporibus assumenda culpa quos.
             </P>
           </CardContainer>
-          <CardContainer>
+          <CardContainer className="transition">
             <h1>Resource 2</h1>
             <P>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

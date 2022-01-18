@@ -18,7 +18,7 @@ const News = () => {
       {isMobile ? (
         <>
           <CenterDiv>
-            <CardContainer2>
+            <CardContainer2 className="transition">
               <H1>News Article 1</H1>
               <P>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -30,7 +30,7 @@ const News = () => {
             </CardContainer2>
           </CenterDiv>
           <CenterDiv>
-            <CardContainer2>
+            <CardContainer2 className="transition">
               <H1>News Article 2</H1>
               <P>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -44,7 +44,7 @@ const News = () => {
         </>
       ) : (
         <CenterDiv>
-          <CardContainer2>
+          <CardContainer2 className="transition">
             <H1>News Article 1</H1>
             <P>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -53,7 +53,7 @@ const News = () => {
               blanditiis beatae maiores sed temporibus assumenda culpa quos.
             </P>
           </CardContainer2>
-          <CardContainer2>
+          <CardContainer2 className="transition">
             <H1>News Article 2</H1>
             <P>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

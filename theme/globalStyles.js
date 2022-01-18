@@ -65,7 +65,7 @@ h6 {
 p {
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.7rem + 1vw);
 }
 
 a {
@@ -90,15 +90,15 @@ button {
 }
 `;
 export const H1 = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   ${respondTo.xs`
-    font-size: calc(1.25rem + 1vw);
+    font-size: calc(1rem + 1vw);
   `}
   ${respondTo.sm`
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1.25rem + 1vw);
   `}
   ${respondTo.md`
-    font-size: calc(1.75rem + 1vw);
+    font-size: calc(1.5rem + 1vw);
   `}
   ${respondTo.lg`
     font-size: calc(2rem + 1vw);
@@ -135,13 +135,13 @@ export const H6 = styled.h6`
 export const P = styled.p`
   margin: 1.5vw 1.5vw;
   ${respondTo.sm`
-    font-size: calc(0.35rem + 1vw);
+    font-size: calc(0.75rem + 1vw);
   `}
   ${respondTo.md`
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.8rem + 1vw);
   `}
   ${respondTo.lg`
-    font-size: calc(0.65rem + 1vw);
+    font-size: calc(0.85rem + 1vw);
   `}
 `;
 export const Container = styled.nav`
@@ -228,7 +228,7 @@ export const PageHeader = styled(H1)`
 export const FormGroup = styled.div`
   color: ${({ theme }) => theme && theme.dark};
   display: block;
-  width: 40vw;
+  width: 80%;
   margin: 2vw auto;
   border-radius: 10px;
   background-color: ${({ theme }) => theme && theme.primary};
@@ -242,14 +242,15 @@ export const Label = styled.label`
   align-items: center;
   border-bottom: 1px solid ${({ theme }) => theme && theme.info};
   border-radius: 25%;
-  width: 6vw;
+  width: 25%;
+  font-size: calc(1rem + 1vw);
 `;
 export const Input = styled.input`
   border: none;
   border-bottom: 2px solid ${({ theme }) => theme && theme.info};
   font-size: 1.5rem;
   padding: 1vw;
-  width: 40vw;
+  width: 100%;
   background-color: whitesmoke;
   &:focus {
     outline: none;
@@ -262,7 +263,7 @@ export const Textarea = styled.textarea`
   caret-color: black;
   margin-top: 1vw;
   padding: 1vw;
-  width: 40vw;
+  width: 100%;
   height: 15vw;
   background-color: whitesmoke;
   &:focus {

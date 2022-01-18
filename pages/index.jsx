@@ -47,8 +47,8 @@ export default function Home() {
                     src={GIFImg}
                     alt="Gif bacteria"
                     layout="fixed"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     quality={100}
                     priority
                   />
